@@ -40,4 +40,12 @@ public class Wizard
         Console.WriteLine($"Nama: {Nama}, Energi: {Energy} \n");
     }
 
+    public void Attack(Wizard wizardLawanObj)
+    {
+        //mengurangi energy wizard lawan object sebesar damage dari object ini
+        wizardLawanObj.Energy -= Damage;
+        Console.WriteLine($"{Nama} menyerang {wizardLawanObj.Nama}");
+        Console.WriteLine($"Sisa Energy {wizardLawanObj.Nama} adalah {wizardLawanObj.Energy}");
+    }
+
 }
