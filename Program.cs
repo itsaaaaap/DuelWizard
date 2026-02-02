@@ -32,4 +32,12 @@ public class Wizard
         Damage = damage;
 
 
+    }
+
+    public void ShowStats()
+    {
+        Console.WriteLine("Statistik Wizard");
+        Console.WriteLine($"Nama: {Nama}, Energi: {Energy} \n");
+    }
+
 }
