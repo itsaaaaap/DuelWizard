@@ -50,9 +50,15 @@ public class Wizard
 
     public void Heal()
     {
-        if (Energy < 100)
+        Energy += 5;
+
+        if (Energy <= 100)
         {
-            Energy += 5;
+            Console.WriteLine($"{Nama} melakukan heal! Energy meningkat");
+        }
+        else
+        {
+            Console.WriteLine("Sudahmencapai energi maksimal");
         }
     }
 
