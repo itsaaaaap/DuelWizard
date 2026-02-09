@@ -15,7 +15,17 @@ wizardsa.Attack(wizardsb);
 Console.WriteLine("Permainan Berakhir . . . \n");
 wizardsa.ShowStats();
 wizardsb.ShowStats();
-S
+
+
+if (wizardsb.Energy > wizardsa.Energy)
+{
+    Console.WriteLine($"{wizardsa.Nama} memenangkan duel");
+}
+else
+{
+    Console.WriteLine($"{wizardsb} memenangkan duel!! ");
+}
+
 public class Wizard
 {
 
