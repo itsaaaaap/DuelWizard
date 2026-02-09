@@ -48,4 +48,12 @@ public class Wizard
         Console.WriteLine($"Sisa Energy {wizardLawanObj.Nama} adalah {wizardLawanObj.Energy}");
     }
 
+    public void Heal()
+    {
+        if (Energy < 100)
+        {
+            Energy += 5;
+        }
+    }
+
 }
